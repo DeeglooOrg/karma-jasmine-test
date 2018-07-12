@@ -30,6 +30,10 @@ module.exports = function(config) {
       'src/*.spec.js': ['webpack']
     },
 
+    webpack: {
+      mode: 'development'
+    },
+
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
