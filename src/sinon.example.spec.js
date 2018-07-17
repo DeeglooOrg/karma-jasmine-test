@@ -21,12 +21,12 @@ define ('fakeServer', async () => {
       JSON.stringify(obj)
     ])
 
-    const r = getFromRoute (route)
+    const resPromise = getFromRoute (route)
 
     server.respond()
 
-    const resBody = await r
-    expect (resBody).toEqual (obj)
+    const res = await resPromise
+    expect (res).toEqual (obj)
   })
 
 })
