@@ -1,6 +1,6 @@
 const { asyncTimeout } = require('./async.example.js')
 
-define('asyncTimeout', () => {
+describe('asyncTimeout', () => {
   const ms = 50
   let spyCb
   beforeEach(() => {

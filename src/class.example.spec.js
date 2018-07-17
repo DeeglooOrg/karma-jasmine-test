@@ -1,6 +1,6 @@
 const { Dep, ClassWithDep } = require ('./class.example.js')
 
-define ('ClassWithDep', () => {
+describe ('ClassWithDep', () => {
   let dep, depSpy, cls
   beforeEach (() => {
     dep = new Dep ()

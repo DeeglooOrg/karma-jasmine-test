@@ -1,12 +1,12 @@
 const example = require('./simple.example.js')
 
-define ('example', () => {
-    define ('identity', () => {
+describe ('example', () => {
+  describe ('identity', () => {
     it ('should return the same value', () => {
       const anyVal = 5
       expect (example.identity (anyVal)).toBe (anyVal)
     })
-    define ('abs', () => {
+    describe ('abs', () => {
       it ('should return absolute of a value', () => {
         const positiveVal = 5
         expect (example.abs (positiveVal)).toBe (positiveVal, 'should be same')
