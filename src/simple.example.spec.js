@@ -3,14 +3,14 @@ const example = require('./simple.example.js')
 define ('example', () => {
     define ('identity', () => {
     it ('should return the same value', () => {
-      const val = 5
-      expect (example.identity (val)).toBe (val)
+      const anyVal = 5
+      expect (example.identity (anyVal)).toBe (anyVal)
     })
     define ('abs', () => {
       it ('should return absolute of a value', () => {
-        const val = 5
-        expect (example.abs (val)).toBe (val, 'should be same')
-        expect (example.abs (-val)).toBe (val, 'should have positive sign')
+        const positiveVal = 5
+        expect (example.abs (positiveVal)).toBe (positiveVal, 'should be same')
+        expect (example.abs (-positiveVal)).toBe (positiveVal, 'should have positive sign')
       })
     })
   })
