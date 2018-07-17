@@ -1,7 +1,7 @@
 const sinon = require('sinon')
 const { getFromRoute } = require('./sinon.example.js')
 
-describe ('fakeServer', async () => {
+describe ('fakeServer', () => {
   let server
   beforeEach (() => {
     // this intercepts requests
