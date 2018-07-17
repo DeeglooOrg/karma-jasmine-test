@@ -1,4 +1,4 @@
-const example = require('./example.js')
+const example = require('./simple.example.js')
 
 define ('example', () => {
     define ('identity', () => {
