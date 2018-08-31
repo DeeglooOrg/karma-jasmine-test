@@ -4,4 +4,4 @@ This repo contains simple test examples for using `karma`/`jasmine`/`sinon` with
 
 # Usage
 
-Run `npx karma start` or without `npx`, `./node_modules/.bin/karma start`
+Run `npm run test`
